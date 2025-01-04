@@ -1,56 +1,70 @@
-# Skillset - A Community Platform for Teachers and Students
+# **Skillset - A Social Learning Platform for Students**
 
-**Skillset** is a feature-rich online platform designed to connect teachers, tutors, and students. This platform provides tools for creating, managing, and sharing live classes, courses, and educational content. Teachers can offer personalized tutoring, while students can access classes, track progress, and engage with learning materials in an interactive way.
-
-### Features
-
-- **Live Classes**: Teachers can host live classes, workshops, and sessions for students in real-time with video streaming and interactive tools.
-- **Course Creation**: Teachers can create and organize full courses with modules, assignments, and quizzes.
-- **Interactive Learning**: Real-time quizzes, whiteboards, student discussions, and live feedback help increase engagement.
-- **Monetization**: Teachers can monetize their content through subscriptions, pay-per-class, and tip features.
-- **Student Dashboard**: Personalized learning path, progress tracking, and access to all enrolled classes.
-- **Payment Integration**: Integrated payment system via **Stripe** for seamless class bookings, course purchases, and teacher payouts.
-- **Certification**: Teachers can offer certification upon course completion.
-- **AI-Powered Recommendations**: AI-powered content recommendations based on student preferences, interests, and progress.
-- **Freelance Marketplace**: Teachers can list their services and offer one-on-one tutoring or specialized classes.
-
-### Tech Stack
-
-- **Frontend**: Next.js 14, React, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: Prisma ORM, Neon (PostgreSQL), MySQL
-- **Authentication**: Clerk (for secure user authentication and management)
-- **Payment Gateway**: Stripe
-- **File Storage**: Cloudinary AI (for media uploads, course materials, and AI-generated content)
-- **AI**: Custom AI models for content recommendations and personalized learning
-- **Hosting/Deployment**: Vercel
-
-### Why Choose Skillset?
-
-- **Tailored for Education**: Unlike general video conferencing tools like Zoom, Skillset is built specifically for educators and students, with features focused on teaching, learning, and community-building.
-- **Interactive Tools**: Engaging tools like live quizzes, whiteboards, and real-time feedback keep students involved in the learning process.
-- **Affordable & Scalable**: Teachers can monetize their content easily and scale their teaching business. Students can find personalized learning experiences at competitive prices.
-- **AI Features**: Skillset leverages AI to recommend relevant courses, tutoring, and content for students, enhancing the learning experience.
-- **Focus on Small Classes and Tutoring**: Unlike massive platforms, Skillset allows teachers to offer small, focused classes and one-on-one tutoring.
+Skillset is a **social learning platform** where students can share study resources, collaborate, and interact with peers and educators in a dynamic and engaging way. With a rich set of features designed for learning and social interaction, Skillset brings the best of both worlds: **education and social networking**.
 
 ---
 
-## Setup Instructions
+## **Features**
 
-### Prerequisites
+### **Core Features**
 
-Make sure you have the following installed on your system:
+- **Live Classes & Study Groups**: Create, manage, and join live study sessions or group study rooms.
+- **Post System**: Share and post study materials, notes, resources, or learning updates.
+- **Likes, Comments & Mentions**: Engage with content via likes, comments, and mentions to foster discussions.
+- **Bookmark System**: Save important resources or posts for later reference.
+- **Notifications**: Get notified when someone likes, comments, or mentions your posts.
+- **Direct Messages (DMs)**: Chat with other users privately to discuss topics or share resources.
+- **Hashtags**: Use hashtags to categorize and search for study resources by subject or topic.
+- **Follow System**: Follow other users, teachers, or study groups to stay updated with new content.
 
-- **Node.js** (version 16 or above)
-- **Yarn** or **npm**
-- **PostgreSQL** or **MySQL** (depending on the database choice)
-- **Cloudinary account** (for image/video storage)
-- **Stripe account** (for payment integration)
+### **Social Media & Collaboration**
 
-### 1. Clone the Repository
+- **Interactive Learning**: Real-time quizzes, feedback, and collaboration in study groups.
+- **Resource Sharing**: Upload, share, and collaborate on study materials with your peers.
+- **Real-Time Communication**: Engage in live discussions with classmates or instructors in real-time.
+- **User Profiles**: Students and educators can create profiles to showcase their academic journey, achievements, and resources.
+
+---
+
+## **Technologies**
+
+### **Frontend:**
+
+- **Next.js 15**: The latest version of Next.js for building optimized, server-rendered React applications.
+- **TanStack React Query**: Used for managing server-state and optimizing data fetching and caching in React.
+- **Optimistic Updates**: Provides a more responsive experience by updating UI optimistically before the server responds.
+- **Infinite Scrolling Feeds**: Displays an endless feed of posts or study resources, perfect for academic content.
+- **Tailwind CSS**: Utility-first CSS framework for creating responsive layouts, paired with Shadcn UI components for pre-designed UI elements.
+- **Dark Mode & Light Mode**: Support for dark, light, and system-wide themes for an adaptable user experience.
+- **Mobile-Responsive Layout**: Fully optimized for mobile, ensuring a smooth experience on all devices.
+
+### **Backend:**
+
+- **Server Actions & Server Components**: Enable server-side logic and components to interact directly with the database, minimizing client-side overhead.
+- **Lucia Authentication**: Secure authentication system using both username/password and Google OAuth2.
+- **Prisma ORM**: For easy and powerful database management with PostgreSQL as the primary database.
+- **Postgres Database**: Structured relational database with Prisma ORM for efficient data storage and retrieval.
+- **Full-Text Search**: Enables robust search functionality to find content, resources, or users quickly.
+- **Cron Job Setup**: Automates server-side tasks like notifications or reminders on a scheduled basis.
+
+### **Features & Integrations:**
+
+- **File Uploads**: Drag and drop or copy-paste support for uploading files, including study resources, notes, and documents using **UploadThing**.
+- **TipTap Editor**: A powerful rich-text editor for creating educational posts and content.
+- **Advanced Caching & Revalidation**: Efficient data fetching and caching to minimize redundant server requests and provide fast load times.
+
+### **Real-Time Features:**
+
+- **DM System (Stream-powered)**: Real-time messaging system for direct, private communication.
+- **Real-Time Form Validation**: React Hook Form and Zod are used for validation to provide immediate feedback on user inputs.
+
+---
+
+## **Deployment & Setup**
+
+### **1. Clone the Repository:**
 
 ```bash
-git clone https://github.com/your-username/skillset.git
-cd skillset
->>>>>>> 6fafa8c55ed5c19630dc2f8bee9f73d8fa60f77f
+git clone https://github.com/your-username/Skillset.git
+cd Skillset
 ```
