@@ -1,5 +1,3 @@
-# <<<<<<< HEAD
-
 # Skillset - A Community Platform for Teachers and Students
 
 **Skillset** is a feature-rich online platform designed to connect teachers, tutors, and students. This platform provides tools for creating, managing, and sharing live classes, courses, and educational content. Teachers can offer personalized tutoring, while students can access classes, track progress, and engage with learning materials in an interactive way.
