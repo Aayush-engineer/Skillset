@@ -6,6 +6,7 @@ import { Like } from "@prisma/client";
 import { Heart } from "lucide-react";
 import { useOptimistic } from "react";
 import ActionIcon from "./ActionIcon";
+import { likePost } from "@/lib/actions";
 
 function LikeButton({post,userId}: {
   post: PostWithExtras
@@ -27,7 +28,7 @@ function LikeButton({post,userId}: {
           const postId = formData.get("postId");
           addOptimisticLike({ postId, userId });
 
-          // await likePost(postId);
+          await likePost(postId);
         }}
       >
         <input type="hidden" name="postId" value={post.id} />
